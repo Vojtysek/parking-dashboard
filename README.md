@@ -1,6 +1,6 @@
 # Parking Dashboard 
 
-## 🚀 Roadmap
+## 🚀 Obsah
 
 - (✅) Získávání [dat](#📊-data) z aplikace
 - (✅) [Algoritmus](#algoritmus) dostupných míst
