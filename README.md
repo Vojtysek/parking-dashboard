@@ -48,7 +48,7 @@ Hodnota pro maximání počet míst se jednoduše zjistí pomocí délky JSON ob
 max[x] = Object.keys(json).length;
 ```
 
-Ale taktéž je potřeba zjistit, kolik aut denně zaparkuje na celém parkovišti. Proto si naši `Aktuální` hodnotu obsazených míst uložíme do proměnné, kterou poté poměříme s novou `Vypočítanou` hodnoutou dle předchozího algoritmu. V případě ze `Aktuální` hodnota je menšá než `Vypočítaná` hodnota, tak se k dennímu počtu přičte rozdíl mezi `Aktuální` a `Vypočítanou` hodnotou. Každý den přesně ve 23:59:59 se tato hodnota odešle do databáze a zresetuje.
+Ale taktéž je potřeba zjistit, kolik aut denně zaparkuje na celém parkovišti. Proto si naši `Aktuální` hodnotu obsazených míst uložíme do proměnné, kterou poté poměříme s novou `Vypočítanou` hodnoutou dle předchozího algoritmu. V případě, že `Aktuální` hodnota je menšá než `Vypočítaná` hodnota, tak se k dennímu počtu přičte rozdíl mezi `Aktuální` a `Vypočítanou` hodnotou. Každý den přesně ve 23:59:59 se tato hodnota odešle do databáze a zresetuje.
 
 ```js
 if(Aktuální < Vypočítaná) {
